@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>video</title>
+    <link rel="stylesheet" href="assets/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="mainContainer">
+
+		<!-- Video Page -->
+		<div class="page videoPage">
+
+			<!-- video space container -->
+			<div id="video_wrapper" class="videoWrapper">
+
+				<!-- Main Video -->
+				<video id="main_video" preload="auto" playsinline webkit-playsinline loop>
+					<source src="assets/main_loop.mp4" type="video/mp4">
+				</video>
+
+				<!-- Secondary Video - personality type -->
+				<video id="personality_video" preload="auto" playsinline webkit-playsinline style="display: none">
+					<source id="personality_video_src_mpeg" src="" type="video/mp4">
+				</video>
+
+				<!-- Product Links -->
+				<a data-href="http://bodyshop.com/product-1" class="product product-1" data-id="1"></a>
+				<a data-href="http://bodyshop.com/product-2" class="product product-2" data-id="2"></a>
+				<a data-href="http://bodyshop.com/product-3" class="product product-3" data-id="3"></a>
+				<a data-href="http://bodyshop.com/product-4" class="product product-4" data-id="4"></a>
+				<a data-href="http://bodyshop.com/product-5" class="product product-5" data-id="5"></a>
+				<a data-href="http://bodyshop.com/product-6" class="product product-6" data-id="6"></a>
+
+			</div>
+
+			<!-- Video Overlay -->
+			<div class="overlay"></div>
+
+			<!-- Question -->
+			<div class="question">
+				<p>In the shower, I</p>
+				<form id="personality_form">
+					<input type="text" name="personality" id="personality_input" autocomplete="off">
+				</form>
+			</div>
+
+		</div>
+		<script src="assets/main.js" type="text/javascript"></script>
+	</div>
+	<script>
+
+	</script>
+</body>
+</html>

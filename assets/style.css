@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+body {
+    margin: 0;
+    padding: 0;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+b {
+    font-weight: inherit;
+}
+a {
+    outline: 0;
+	cursor: pointer;
+    text-decoration: none;
+}
+a:focus, a:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input:focus, textarea:focus {
+    outline: 0;
+}
+h1,h2,h3,h4,h5,p, ul {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+body, html, .mainContainer {
+	width: 100%;
+	height: 100%;
+}
+.videoPage {
+	background: url('bg.jpg') repeat-x;
+	background-size: auto 100%;
+	background-position: bottom center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+.videoWrapper {
+    height: 100%;
+    display: block;
+	margin: 0 auto;
+	position: relative;
+}
+.videoWrapper video {
+	display: block;
+    height: auto;
+    transform: translateZ(0);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+	left: 0;
+}
+.videoWrapper video + video {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+	left: 0;
+}
+.videoPage .overlay {
+	background: url('img_overlay.png') no-repeat;
+	background-size: cover;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.6;
+	z-index: 1;
+}
+.videoPage .question {
+	background: rgba(255,255,255,0.2);
+	text-align: center;
+	text-transform: uppercase;
+	width: 90%;
+	padding: 2% 5%;
+	position: absolute;
+    top: 2%;
+    left: 5%;
+	z-index: 3;
+}
+.question p {
+	font-size: 20px;
+}
+.question input {
+	background: rgba(0,0,0,0.15);
+	border: 0;
+	border-radius: 0;
+	color: rgba(255, 255, 255, 0.5);
+	display: block;
+	font-size: 40px;
+	font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+/* Products */
+.videoWrapper a {
+	background: rgba(0, 0, 0, 0);
+	position: absolute;
+	bottom: 0;
+	height: 0;
+    margin-bottom: 19%;
+	transition: background 0.35s;
+	z-index: 2;
+}
+.videoWrapper .product-1 {
+	background: rgba(165, 138, 92, 0.5);
+    width: 7.1%;
+    padding-bottom: 18.8%;
+    left: 11.9%;
+}
+.videoWrapper .product-2 {
+	background: rgba(165, 138, 92, 0.5);
+    width: 7.2%;
+    padding-bottom: 18.8%;
+    left: 19.1%;
+}
+.videoWrapper .product-3 {
+	background: rgba(0,0,0, 0.35);
+    width: 6.8%;
+    padding-bottom: 18.8%;
+    left: 26.4%;
+}
+.videoWrapper .product-4 {
+	background: rgba(0,0,0, 0.35);
+    width: 10.1%;
+    padding-bottom: 8.8%;
+    left: 68.3%;
+}
+.videoWrapper .product-5 {
+	background: rgba(133, 193, 206, 0.5);
+    width: 7.1%;
+    padding-bottom: 18.8%;
+    left: 78.3%;
+}
+.videoWrapper .product-6 {
+	background: rgba(133, 193, 206, 0.5);
+    width: 7.3%;
+    padding-bottom: 18.8%;
+    left: 85.5%;
+}
+.videoWrapper a:hover {
+	background: rgba(0, 0, 0, 0.65);
+}
+
+@media only screen and (min-aspect-ratio: 199/141) {
+	.videoWrapper {
+	    height: 100vh;
+		width: 84.41vh;
+	    display: block;
+		margin: 0 auto;
+		position: relative;
+	}
+	.videoWrapper video {
+	    height: 100%;
+	    width: auto;
+	    position: static;
+	}
+	.videoPage .overlay {
+		opacity: 1;
+	}
+	.videoPage .question {
+		width: 50%;
+	    top: 5%;
+	    left: 25%;
+	}
+	.question p {
+		font-size: 33px;
+	}
+	.question input {
+		font-size: 90px;
+	}
+
+	.videoWrapper a {
+		top: 0;
+		bottom: auto;
+		margin-bottom: 0;
+	}
+	.videoWrapper .product-1 {
+		background: rgba(165, 138, 92, 0.5);
+	    width: 7.1%;
+	    padding-bottom: 18.8%;
+	    margin-top: 81%;
+	    left: 11.9%;
+	}
+	.videoWrapper .product-2 {
+		background: rgba(165, 138, 92, 0.5);
+	    width: 7.2%;
+	    padding-bottom: 18.8%;
+	    margin-top: 81%;
+	    left: 19.1%;
+	}
+	.videoWrapper .product-3 {
+		background: rgba(0,0,0, 0.35);
+	    width: 6.8%;
+	    padding-bottom: 18.8%;
+	    margin-top: 81%;
+	    left: 26.4%;
+	}
+	.videoWrapper .product-4 {
+		background: rgba(0,0,0, 0.35);
+	    width: 10.1%;
+	    padding-bottom: 8.8%;
+	    margin-top: 90%;
+	    left: 68.3%;
+	}
+	.videoWrapper .product-5 {
+		background: rgba(133, 193, 206, 0.5);
+	    width: 7.1%;
+	    padding-bottom: 18.8%;
+	    margin-top: 80%;
+	    left: 78.3%;
+	}
+	.videoWrapper .product-6 {
+		background: rgba(133, 193, 206, 0.5);
+	    width: 7.3%;
+	    padding-bottom: 18.8%;
+	    margin-top: 80%;
+	    left: 85.5%;
+	}
+}
